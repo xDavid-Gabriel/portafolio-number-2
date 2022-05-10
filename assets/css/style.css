@@ -154,7 +154,7 @@ outline: none;}
 .btn__share{
   display: none;
 }
-.nav__togle{
+/* .nav__togle{
   position: fixed;
   top: 2rem;
   left: 22px;
@@ -162,7 +162,7 @@ outline: none;}
   z-index: 999;
   cursor: pointer;
   display: flex;
-}
+} */
 
 /*Menu de navegacion*/
 .nav-toggler{
@@ -283,10 +283,6 @@ height: 2px;
   font-size: 2rem;
   cursor: pointer;
 } 
-
-
-
-
 
 /*====== MAIN ====== */
 .main{
@@ -1232,6 +1228,7 @@ textarea.input{
   .nav__togle{
     display: none;
   }
+  
   .nav__close{
     display: none;
   }
