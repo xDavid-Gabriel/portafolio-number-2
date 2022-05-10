@@ -26,17 +26,33 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/main.css" />
 
+    <!-- Fontawesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+  />
+       <!-- Style Switcher -->
+       <link rel="stylesheet" href="./assets/css/skins/color-1.css" class="alternate-style" title="color-1" />
+       <link rel="stylesheet" href="./assets/css/skins/color-2.css" class="alternate-style" title="color-2" disabled/>
+       <link rel="stylesheet" href="./assets/css/skins/color-3.css" class="alternate-style" title="color-3" disabled/>
+       <link rel="stylesheet" href="./assets/css/skins/color-4.css" class="alternate-style" title="color-4" disabled/>
+       <link rel="stylesheet" href="./assets/css/skins/color-5.css" class="alternate-style" title="color-5" disabled/>
+       <link rel="stylesheet" href="./assets/css/style-switcher.css">
+
     <title>Portafolio numero 2</title>
   </head>
   <body>
     <!--===== SIDEBAR ======-->
-    <div>
+    <!-- <div>
       <img src="./assets/img/nav-togle.svg" class="nav__togle" alt="...">
+    </div> -->
+    <div class="nav-toggler nav__togle">
+      <span></span>
     </div>
     <aside class="sidebar" id="sidebar">
       <nav class="nav">
         <div class="nav__logo">
-          <a href="index.html" class="nav__logo-text">M</a>
+          <a href="index.html" class="nav__logo-text">D</a>
         </div>
          
         <div class="nav__menu">
@@ -106,7 +122,6 @@
             
             <div class="home__data col-12 col-md-6">
               <div class="content__img">
-
                 <img class="home__img" src="./assets/img/home.jpeg" alt="..." />
               </div>
               <h1 class="home__title">Hi, I'am David</h1>
@@ -143,6 +158,9 @@
                   <span class="info__subtitle">davidbetalleluz31@gmail.com</span>
                 </div>
               </div>
+            </div>
+            <div class="imagen__pc">
+              <img src="./assets/img/home-pc.png" class="imagen-pc" alt="...">
             </div>
           </div>
         </div>
@@ -1085,8 +1103,24 @@
         </div>
       </footer>
     </main>
-
-
+      <!-- Style Switcher Start -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
+      </div>
+      <div class="day-night s-icon">
+        <i class="fas fa-sun"></i>
+      </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+      </div>
+    </div>
+  
 
 
     <!--===== SCROLL UP ======-->
